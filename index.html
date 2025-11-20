@@ -130,11 +130,51 @@ document.getElementById('close-chat').addEventListener('click', function() {
 });
 
 // Send message function
-document.getElementById('user-input').addEventListener('keypress', function(e) {
-  if (e.key === 'Enter') {
-    sendMessage();
+async function sendMessage() {
+  const userInput = document.getElementById('user-input');
+  const message = userInput.value.trim();
+  
+  if (message) {
+    addMessage('You: ' + message, 'user');
+    userInput.value = '';
+    
+    // Show typing indicator
+    addMessage('RoadMaster: Thinking...', 'bot typing');
+    
+    try {
+      // Send to n8n webhook
+      const response = await fetch('YOUR_N8N_WEBHOOK_URL_HERE', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          question: message,
+          timestamp: new Date().toISOString(),
+          source: 'website_chat'
+        })
+      });
+      
+      const data = await response.json();
+      
+      // Remove typing indicator and show real response
+      removeTypingIndicator();
+      addMessage('RoadMaster: ' + data.answer, 'bot');
+      
+    } catch (error) {
+      removeTypingIndicator();
+      addMessage('RoadMaster: Sorry, having trouble connecting. Please try again.', 'bot error');
+    }
   }
-});
+}
+
+function removeTypingIndicator() {
+  const chatMessages = document.getElementById('chat-messages');
+  const lastMessage = chatMessages.lastChild;
+  if (lastMessage && lastMessage.textContent.includes('Thinking...')) {
+    chatMessages.removeChild(lastMessage);
+  }
+}
 
 function sendMessage() {
   const userInput = document.getElementById('user-input');
