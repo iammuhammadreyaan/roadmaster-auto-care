@@ -22,52 +22,64 @@
   </section>
 
   <!-- SERVICES CARDS -->
-  <section class="py-20 px-4 md:px-20 grid md:grid-cols-3 gap-8">
-    <!-- Card 1 -->
-    <div class="bg-green-50 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
-      <div class="bg-green-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl">
-        <i class="fas fa-cogs"></i>
-      </div>
-      <h2 class="text-2xl font-bold text-green-500 mb-2 text-center">Engine Diagnostics</h2>
-      <ul class="text-gray-800 list-disc list-inside mb-4">
-        <li>ECU scanning</li>
-        <li>Check engine light analysis</li>
-        <li>Misfire & fuel system check</li>
-      </ul>
-      <a href="#booking" class="block text-center bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 font-semibold transition">Book Now</a>
-    </div>
+<section class="py-20 px-4 md:px-20 grid md:grid-cols-3 gap-8 relative" 
+         style="background-image: url('https://images.unsplash.com/photo-1591005260916-f3b2b8e16e7f?auto=format&fit=crop&w=1950&q=80'); 
+                background-size: cover; 
+                background-position: center;">
+  <div class="absolute inset-0 bg-white/80 rounded-lg pointer-events-none"></div> <!-- low-opacity overlay -->
 
-    <!-- Card 2 -->
-    <div class="bg-green-50 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
-      <div class="bg-green-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl">
-        <i class="fas fa-car-crash"></i>
-      </div>
-      <h2 class="text-2xl font-bold text-green-500 mb-2 text-center">Brake & Suspension</h2>
-      <ul class="text-gray-800 list-disc list-inside mb-4">
-        <li>ABS system check</li>
-        <li>Brake pad replacement</li>
-        <li>Shocks/struts inspection</li>
-      </ul>
-      <a href="#booking" class="block text-center bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 font-semibold transition">Book Now</a>
+  <!-- Card 1 -->
+  <div class="bg-green-50 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition relative z-10">
+    <div class="bg-green-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl">
+      <i class="fas fa-cogs"></i>
     </div>
+    <h2 class="text-2xl font-bold text-green-500 mb-2 text-center">Engine Diagnostics</h2>
+    <ul class="text-gray-800 list-disc list-inside mb-4">
+      <li>ECU scanning</li>
+      <li>Check engine light analysis</li>
+      <li>Misfire & fuel system check</li>
+    </ul>
+    <a href="#booking" class="block text-center bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 font-semibold transition">Book Now</a>
+  </div>
 
-    <!-- Card 3 -->
-    <div class="bg-green-50 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
-      <div class="bg-green-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl">
-        <i class="fas fa-fan"></i>
-      </div>
-      <h2 class="text-2xl font-bold text-green-500 mb-2 text-center">AC & Electrical</h2>
-      <ul class="text-gray-800 list-disc list-inside mb-4">
-        <li>AC cooling fix</li>
-        <li>Battery testing</li>
-        <li>Alternator check</li>
-      </ul>
-      <a href="#booking" class="block text-center bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 font-semibold transition">Book Now</a>
+  <!-- Card 2 -->
+  <div class="bg-green-50 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition relative z-10">
+    <div class="bg-green-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl">
+      <i class="fas fa-car-crash"></i>
     </div>
-  </section>
+    <h2 class="text-2xl font-bold text-green-500 mb-2 text-center">Brake & Suspension</h2>
+    <ul class="text-gray-800 list-disc list-inside mb-4">
+      <li>ABS system check</li>
+      <li>Brake pad replacement</li>
+      <li>Shocks/struts inspection</li>
+    </ul>
+    <a href="#booking" class="block text-center bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 font-semibold transition">Book Now</a>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="bg-green-50 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition relative z-10">
+    <div class="bg-green-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl">
+      <i class="fas fa-fan"></i>
+    </div>
+    <h2 class="text-2xl font-bold text-green-500 mb-2 text-center">AC & Electrical</h2>
+    <ul class="text-gray-800 list-disc list-inside mb-4">
+      <li>AC cooling fix</li>
+      <li>Battery testing</li>
+      <li>Alternator check</li>
+    </ul>
+    <a href="#booking" class="block text-center bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 font-semibold transition">Book Now</a>
+  </div>
+</section>
+
 
   <!-- BOOKING FORM -->
-  <section id="booking" class="bg-green-100 py-20 px-4 md:px-20 text-center rounded-lg mx-4 md:mx-20">
+<section id="booking" class="py-20 px-4 md:px-20 relative rounded-lg mx-4 md:mx-20"
+         style="background-image: url('https://images.unsplash.com/photo-1591005260916-f3b2b8e16e7f?auto=format&fit=crop&w=1950&q=80'); 
+                background-size: cover; 
+                background-position: center;">
+  <div class="absolute inset-0 bg-white/85 rounded-lg pointer-events-none"></div> <!-- low-opacity overlay -->
+
+  <div class="relative z-10 text-center">
     <h2 class="text-3xl font-bold text-green-500 mb-6">Book Your Appointment</h2>
     <form id="bookingForm" class="max-w-xl mx-auto grid gap-4 text-left bg-white p-6 rounded-lg shadow-lg">
       <input type="text" name="name" placeholder="Full Name" required class="w-full p-3 rounded border border-green-300">
@@ -77,7 +89,9 @@
       <input type="date" name="date" required class="w-full p-3 rounded border border-green-300">
       <button type="submit" class="bg-green-500 text-white px-6 py-3 rounded font-semibold hover:bg-green-600 w-full transition shadow-lg">Submit</button>
     </form>
-  </section>
+  </div>
+</section>
+
 
   <!-- FOOTER -->
   <footer class="bg-green-500 py-8 text-center text-white">
