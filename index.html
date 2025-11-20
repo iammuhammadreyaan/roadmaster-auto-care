@@ -47,11 +47,15 @@
                 background-size: cover; 
                 background-position: center;">
     
-  <!-- Overlay for readability -->
-  <div class="absolute inset-0 bg-white/40 pointer-events-none rounded-lg"></div>
+  <!-- SERVICES CARDS -->
+<section class="py-20 px-4 md:px-20 grid md:grid-cols-3 gap-8 relative" 
+         style="background-image: url('https://images.unsplash.com/photo-1591005260916-f3b2b8e16e7f?auto=format&fit=crop&w=1950&q=80'); 
+                background-size: cover; 
+                background-position: center;">
+  <div class="absolute inset-0 bg-white/80 rounded-lg pointer-events-none"></div> <!-- low-opacity overlay -->
 
   <!-- Card 1 -->
-  <div class="p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition relative z-10 bg-white/70">
+  <div class="bg-green-50 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition relative z-10">
     <div class="bg-green-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl">
       <i class="fas fa-cogs"></i>
     </div>
@@ -65,7 +69,7 @@
   </div>
 
   <!-- Card 2 -->
-  <div class="p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition relative z-10 bg-white/70">
+  <div class="bg-green-50 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition relative z-10">
     <div class="bg-green-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl">
       <i class="fas fa-car-crash"></i>
     </div>
@@ -79,7 +83,7 @@
   </div>
 
   <!-- Card 3 -->
-  <div class="p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition relative z-10 bg-white/70">
+  <div class="bg-green-50 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition relative z-10">
     <div class="bg-green-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl">
       <i class="fas fa-fan"></i>
     </div>
@@ -92,18 +96,17 @@
     <a href="#booking" class="block text-center bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 font-semibold transition">Book Now</a>
   </div>
 </section>
-
+    
   <!-- BOOKING FORM -->
 <section id="booking" class="py-20 px-4 md:px-20 relative rounded-lg mx-4 md:mx-20"
          style="background-image: url('https://images.unsplash.com/photo-1591005260916-f3b2b8e16e7f?auto=format&fit=crop&w=1950&q=80'); 
                 background-size: cover; 
                 background-position: center;">
-  <!-- Overlay for readability -->
-  <div class="absolute inset-0 bg-white/50 pointer-events-none rounded-lg"></div>
+  <div class="absolute inset-0 bg-white/85 rounded-lg pointer-events-none"></div> <!-- low-opacity overlay -->
 
   <div class="relative z-10 text-center">
     <h2 class="text-3xl font-bold text-green-500 mb-6">Book Your Appointment</h2>
-    <form id="bookingForm" class="max-w-xl mx-auto grid gap-4 text-left bg-white/80 p-6 rounded-lg shadow-lg">
+    <form id="bookingForm" class="max-w-xl mx-auto grid gap-4 text-left bg-white p-6 rounded-lg shadow-lg">
       <input type="text" name="name" placeholder="Full Name" required class="w-full p-3 rounded border border-green-300">
       <input type="tel" name="phone" placeholder="Phone Number" required class="w-full p-3 rounded border border-green-300">
       <input type="text" name="car_model" placeholder="Car Model" required class="w-full p-3 rounded border border-green-300">
@@ -113,6 +116,7 @@
     </form>
   </div>
 </section>
+
 
 
   <!-- FOOTER -->
