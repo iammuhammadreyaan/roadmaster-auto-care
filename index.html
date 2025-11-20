@@ -7,71 +7,80 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 </head>
-<body class="bg-gray-900 text-white font-sans">
+<body class="bg-white text-gray-900 font-sans">
 
   <!-- HERO SECTION -->
-  <section class="relative bg-black h-screen flex items-center justify-center text-center">
-    <img src="https://images.unsplash.com/photo-1571607383193-c3eb1cfd2b2c?auto=format&fit=crop&w=1950&q=80" class="absolute inset-0 w-full h-full object-cover opacity-30">
+  <section class="relative h-screen flex items-center justify-center text-center">
+    <img src="https://images.unsplash.com/photo-1600250649701-911de5e3b7f5?auto=format&fit=crop&w=1950&q=80" 
+         class="absolute inset-0 w-full h-full object-cover opacity-30">
     <div class="relative z-10 px-4">
-      <h1 class="text-5xl md:text-6xl font-bold text-yellow-400 mb-4 drop-shadow-lg">Professional Auto Care You Can Trust</h1>
-      <p class="text-gray-200 text-lg md:text-xl mb-8 drop-shadow-md">Engine diagnostics, repairs, and maintenance — done right the first time.</p>
-      <a href="#booking" class="bg-yellow-400 text-black px-6 py-3 rounded font-semibold hover:bg-yellow-500 transition shadow-lg">Book Appointment</a>
-      <a href="#chat" class="ml-4 bg-gray-700 px-6 py-3 rounded font-semibold hover:bg-gray-600 transition shadow-lg">Chat with AI Mechanic</a>
+      <h1 class="text-5xl md:text-6xl font-bold text-green-500 mb-4 drop-shadow-lg">Professional Auto Care You Can Trust</h1>
+      <p class="text-gray-800 text-lg md:text-xl mb-8 drop-shadow-md">Engine diagnostics, repairs, and maintenance — done right the first time.</p>
+      <a href="#booking" class="bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition shadow-lg">Book Appointment</a>
+      <a href="#chat" class="ml-4 bg-gray-200 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-300 transition shadow-lg">Chat with AI Mechanic</a>
     </div>
   </section>
 
   <!-- SERVICES CARDS -->
   <section class="py-20 px-4 md:px-20 grid md:grid-cols-3 gap-8">
     <!-- Card 1 -->
-    <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
-      <i class="fas fa-cogs text-yellow-400 text-4xl mb-4"></i>
-      <h2 class="text-2xl font-bold text-yellow-400 mb-2">Engine Diagnostics</h2>
-      <ul class="text-gray-300 list-disc list-inside mb-4">
+    <div class="bg-green-50 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
+      <div class="bg-green-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl">
+        <i class="fas fa-cogs"></i>
+      </div>
+      <h2 class="text-2xl font-bold text-green-500 mb-2 text-center">Engine Diagnostics</h2>
+      <ul class="text-gray-800 list-disc list-inside mb-4">
         <li>ECU scanning</li>
         <li>Check engine light analysis</li>
         <li>Misfire & fuel system check</li>
       </ul>
-      <a href="#booking" class="inline-block bg-yellow-400 text-black px-4 py-2 rounded hover:bg-yellow-500 font-semibold transition">Book Now</a>
+      <a href="#booking" class="block text-center bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 font-semibold transition">Book Now</a>
     </div>
+
     <!-- Card 2 -->
-    <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
-      <i class="fas fa-car-crash text-yellow-400 text-4xl mb-4"></i>
-      <h2 class="text-2xl font-bold text-yellow-400 mb-2">Brake & Suspension</h2>
-      <ul class="text-gray-300 list-disc list-inside mb-4">
+    <div class="bg-green-50 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
+      <div class="bg-green-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl">
+        <i class="fas fa-car-crash"></i>
+      </div>
+      <h2 class="text-2xl font-bold text-green-500 mb-2 text-center">Brake & Suspension</h2>
+      <ul class="text-gray-800 list-disc list-inside mb-4">
         <li>ABS system check</li>
         <li>Brake pad replacement</li>
         <li>Shocks/struts inspection</li>
       </ul>
-      <a href="#booking" class="inline-block bg-yellow-400 text-black px-4 py-2 rounded hover:bg-yellow-500 font-semibold transition">Book Now</a>
+      <a href="#booking" class="block text-center bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 font-semibold transition">Book Now</a>
     </div>
+
     <!-- Card 3 -->
-    <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
-      <i class="fas fa-fan text-yellow-400 text-4xl mb-4"></i>
-      <h2 class="text-2xl font-bold text-yellow-400 mb-2">AC & Electrical</h2>
-      <ul class="text-gray-300 list-disc list-inside mb-4">
+    <div class="bg-green-50 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
+      <div class="bg-green-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl">
+        <i class="fas fa-fan"></i>
+      </div>
+      <h2 class="text-2xl font-bold text-green-500 mb-2 text-center">AC & Electrical</h2>
+      <ul class="text-gray-800 list-disc list-inside mb-4">
         <li>AC cooling fix</li>
         <li>Battery testing</li>
         <li>Alternator check</li>
       </ul>
-      <a href="#booking" class="inline-block bg-yellow-400 text-black px-4 py-2 rounded hover:bg-yellow-500 font-semibold transition">Book Now</a>
+      <a href="#booking" class="block text-center bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 font-semibold transition">Book Now</a>
     </div>
   </section>
 
   <!-- BOOKING FORM -->
-  <section id="booking" class="bg-gray-800 py-20 px-4 md:px-20 text-center rounded-lg mx-4 md:mx-20">
-    <h2 class="text-3xl font-bold text-yellow-400 mb-6">Book Your Appointment</h2>
-    <form id="bookingForm" class="max-w-xl mx-auto grid gap-4 text-left bg-gray-900 p-6 rounded-lg shadow-lg">
-      <input type="text" name="name" placeholder="Full Name" required class="w-full p-3 rounded text-black">
-      <input type="tel" name="phone" placeholder="Phone Number" required class="w-full p-3 rounded text-black">
-      <input type="text" name="car_model" placeholder="Car Model" required class="w-full p-3 rounded text-black">
-      <textarea name="problem" placeholder="Describe the problem" required class="w-full p-3 rounded text-black"></textarea>
-      <input type="date" name="date" required class="w-full p-3 rounded text-black">
-      <button type="submit" class="bg-yellow-400 text-black px-6 py-3 rounded font-semibold hover:bg-yellow-500 w-full transition shadow-lg">Submit</button>
+  <section id="booking" class="bg-green-100 py-20 px-4 md:px-20 text-center rounded-lg mx-4 md:mx-20">
+    <h2 class="text-3xl font-bold text-green-500 mb-6">Book Your Appointment</h2>
+    <form id="bookingForm" class="max-w-xl mx-auto grid gap-4 text-left bg-white p-6 rounded-lg shadow-lg">
+      <input type="text" name="name" placeholder="Full Name" required class="w-full p-3 rounded border border-green-300">
+      <input type="tel" name="phone" placeholder="Phone Number" required class="w-full p-3 rounded border border-green-300">
+      <input type="text" name="car_model" placeholder="Car Model" required class="w-full p-3 rounded border border-green-300">
+      <textarea name="problem" placeholder="Describe the problem" required class="w-full p-3 rounded border border-green-300"></textarea>
+      <input type="date" name="date" required class="w-full p-3 rounded border border-green-300">
+      <button type="submit" class="bg-green-500 text-white px-6 py-3 rounded font-semibold hover:bg-green-600 w-full transition shadow-lg">Submit</button>
     </form>
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-black py-8 text-center text-gray-400">
+  <footer class="bg-green-500 py-8 text-center text-white">
     <p>RoadMaster Auto Care — Lahore</p>
     <p>Mon–Sat: 9 AM – 7 PM | Phone: 0304-112-7762 | Email: support@roadmasterautocare.com</p>
   </footer>
